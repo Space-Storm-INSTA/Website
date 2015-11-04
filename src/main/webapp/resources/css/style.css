@@ -1,0 +1,37 @@
+.row {
+  margin: 0 !important;
+}
+.navbar {
+  height: 100%;
+  padding: 0;
+}
+.navbar .navbutton {
+  float: left;
+  padding: 0;
+  height: 50px;
+}
+.navbar .logo {
+  background-color: #E7E7E7;
+  float: left;
+  padding: 0;
+  height: 100px;
+}
+.navbar .spacestorm {
+  background-color: #A349A4;
+}
+.navbar .spacestorm:hover {
+  background-color: #A977A9;
+}
+.navbar .nyu {
+  background-color: #DA45A5;
+}
+.navbar .nyu:hover {
+  background-color: #FF8DD6;
+}
+.firstpage {
+  height: 100%;
+  background-image: url("../img/spacestorm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
