@@ -1,11 +1,48 @@
 .row{
   margin: 0 !important;
+  .page{
+    margin-left: 16.66667% !important;
+  }
+  .textpage{
+    font-size: 25px;
+    font-family: "AdventureFont";
+    height: 20%;
+    padding: 20px;
+  }
+  .secondpage{
+    padding: 5%;
+    height:80%;
+    .highscore{
+      margin-bottom: 5%;
+      height: 20%;
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+      transition: all .3s ease-out;
+    }
+    .highscorenyan{
+      background-image: url("../img/highscorenyan.png");
+    }
+    .highscorespace{
+      background-image: url("../img/highscorespace.png");
+    }
+    .highscorenyanresult, .highscorespaceresult{
+      display: none;
+      transition: all .3s ease-out;
+    }
+    .borderrigh{
+      border-right: 1px solid #ddd;
+    }
+  }
 }
 .navbar{
   height: 100%;
   padding: 0;
+  background-color: #E7E7E7;
+  position: fixed;
 
   .navbutton{
+    line-height: 50px;
     float: left;
     padding: 0;
     height: 50px;
@@ -15,24 +52,64 @@
      float: left;
      padding: 0;
      height: 100px;
+     line-height: 100px;
+     color: #658DAB;
+     font-size: 40px;
+     text-align: center;
+     font-family: "AdventureFont";
   }
   .spacestorm {
     background-color: #A349A4;
+    font-family: "EthnocentricFont";
   }
   .spacestorm:hover {
     background-color: #A977A9;
+    font-size: 18px;
   }
   .nyu {
     background-color: #DA45A5;
   }
   .nyu:hover {
     background-color: #FF8DD6;
+    font-size: 20px;
   }
 }
-.firstpage {
-  height: 100%;
-  background-image: url("../img/spacestorm.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#owl{
+  margin-left: 16.66667%;
+  .item img{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .owl-wrapper{
+    height: 94%;
+  }
+  .owl-controls{
+    height: 6%;
+  }
+}
+@font-face {
+    font-family: 'AdventureFont';
+    src: url('../font/adventure/adventure-webfont.eot');
+    src: url('../font/adventure/adventure-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/adventure/adventure-webfont.woff2') format('woff2'),
+         url('../font/adventure/adventure-webfont.woff') format('woff'),
+         url('../font/adventure/adventure-webfont.ttf') format('truetype'),
+         url('../font/adventure/adventure-webfont.svg#adventureregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'EthnocentricFont';
+    src: url('../font/ethnocentric/ethnocentric_rg-webfont.eot');
+    src: url('../font/ethnocentric/ethnocentric_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ethnocentric/ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('../font/ethnocentric/ethnocentric_rg-webfont.woff') format('woff'),
+         url('../font/ethnocentric/ethnocentric_rg-webfont.ttf') format('truetype'),
+         url('../font/ethnocentric/ethnocentric_rg-webfont.svg#ethnocentricregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
